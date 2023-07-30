@@ -1,0 +1,7 @@
+### create diary
+POST http://localhost:8080/create/diary?date=2022-07-07
+Content-Type: application/json
+
+{
+  "text": "배고프다?"
+}
