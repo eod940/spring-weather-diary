@@ -57,6 +57,7 @@ public class DiaryController {
         return diaryService.readDiaries(startDate, endDate);
     }
 
+    @Operation(summary = "선택한 날짜의 일기 데이터를 수정합니다.")
     @PutMapping("/update/diary")
     void updateDiary(
             @RequestParam
@@ -66,6 +67,7 @@ public class DiaryController {
         diaryService.updateDiary(date, text);
     }
 
+    @Operation(summary = "선택한 날짜의 일기 데이터를 삭제합니다.")
     @DeleteMapping("/delete/diary")
     void deleteDiary(
             @RequestParam
