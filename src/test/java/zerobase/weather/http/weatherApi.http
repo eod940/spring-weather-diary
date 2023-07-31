@@ -12,7 +12,7 @@ POST http://localhost:8080/create/diary?date=2022-03-03
 Content-Type: application/json
 
 {
-  "text": "공부하자?"
+  "text": 1
 }
 
 
@@ -21,8 +21,13 @@ GET http://localhost:8080/read/diary?date=2022-07-07
 Content-Type: application/json
 
 
+### read diary2
+GET http://localhost:8080/read/diary?date=dsaj
+Content-Type: application/json
+
+
 ### read diaries
-GET http://localhost:8080/read/diaries?startDate=2022-03-02&endDate=2022-07-08
+GET http://localhost:8080/read/diaries?startDate=2022-03-02&endDate=2023-07-08
 Content-Type: application/json
 
 
